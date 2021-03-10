@@ -1,2 +1,2 @@
-# shepherd-package
-build files for shepherd package for the ArchLinux AUR
+# aur-pkgbuilds
+Working build files for certain packages (currently shepherd and cinnamon-git) for the AUR

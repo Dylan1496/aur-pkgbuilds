@@ -1,0 +1,32 @@
+--- a/util/grub-mkconfig.in	2021-03-14 00:51:53.107615513 -0500
++++ b/util/grub-mkconfig.in	2021-03-14 00:54:48.700290313 -0500
+@@ -251,7 +251,9 @@
+   GRUB_ENABLE_CRYPTODISK \
+   GRUB_BADRAM \
+   GRUB_OS_PROBER_SKIP_LIST \
+-  GRUB_DISABLE_SUBMENU
++  GRUB_DISABLE_SUBMENU \
++  GRUB_COLOR_NORMAL \
++  GRUB_COLOR_HIGHLIGHT
+ 
+ if test "x${grub_cfg}" != "x"; then
+   rm -f "${grub_cfg}.new"
+diff --git a/util/grub.d/00_header.in b/util/grub.d/00_header.in
+index d2e7252..8259f45 100644
+--- a/util/grub.d/00_header.in
++++ b/util/grub.d/00_header.in
+@@ -125,6 +125,14 @@ cat <<EOF
+ 
+ EOF
+ 
++if [ x$GRUB_COLOR_NORMAL != x ] && [ x$GRUB_COLOR_HIGHLIGHT != x ] ; then
++    cat << EOF
++set menu_color_normal=$GRUB_COLOR_NORMAL
++set menu_color_highlight=$GRUB_COLOR_HIGHLIGHT
++
++EOF
++fi
++
+ serial=0;
+ gfxterm=0;
+ for x in ${GRUB_TERMINAL_INPUT} ${GRUB_TERMINAL_OUTPUT}; do

@@ -62,13 +62,13 @@ index 4be0bd869e..cc3721b58a 100644
  g kmem    {{KMEM_GID   }}     -            -
  g kvm     {{KVM_GID    }}     -            -
  g lp      {{LP_GID     }}     -            -
-+g optical {{OPTICAL_GID}}     -            -
++g optical -     -            -
  g render  {{RENDER_GID }}     -            -
  g sgx     {{SGX_GID    }}     -            -
 -g tape    {{TAPE_GID   }}     -            -
  g tty     {{TTY_GID    }}     -            -
-+g storage {{STROAGE_GID}}     -            -
-+g uucp    {{UUCP_GID   }}     -            -
++g storage -     -            -
++g uucp    -     -            -
  g video   {{VIDEO_GID  }}     -            -
  
  # Default group for normal users

@@ -1,0 +1,11 @@
+--- evince-git/data/evince.1	2022-04-06 15:11:40.604603496 -0400
++++ evince-git2/data/evince.1	2022-04-06 15:59:01.617099765 -0400
+@@ -21,7 +21,7 @@
+ Evince is a document viewer capable of displaying multiple and single
+ page document formats like PDF and Postscript.  For more general
+ information about Evince please visit our website at
+-http://www.gnome.org/projects/evince/
++https://wiki.gnome.org/Apps/Evince
+ 
+ .LP
+ .SH OPTIONS
